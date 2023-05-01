@@ -16,29 +16,31 @@ This is because i is a defined with let keyword and only has scope within the fo
 11.  This function does returns the following array: `` [50, 100, 150] `` this is because discountedPrice is reiniitialized for every iteration of the for loop and correctly pushed to discounted. It never gets reassigned and hence the correct array is returned. 
 
      QUESTION 12 
-    A. student.name
-    B. student["Grad Year"]
-    C. student.greeting()
-    D. student["Favorite Teacher"].name
-    E. student.courseLoad[0]
+* A. student.name
+* B. student["Grad Year"]
+* C. student.greeting()
+* D. student["Favorite Teacher"].name
+* E. student.courseLoad[0]
 
      QUESTION 13 
-    A. '32' It simply appends 2 to the string '3' instead of adding them as numbers.
-    B. 1 Js treats 3 and 2 as numbers and hence return 1 for '3' - 2.
-    C. 3 is the output since it adds 0 to 3 which is read as 3 while null is read as 0. 
-    D. '3null' since both '3' and null are treated as strings and hence appended to each other. 
-    E. 4 this returns 4 since true is treated as a 1 and added to 3 to sum to 4. 
-    F. 0 this returns 0 since the value of false is 0 as a number and it is added to a null which also converts to 0. Hence 0+0 = 0. 
-    G. '3undefined' JS concatenates both '3' and undefined as as strings to give '3undefined' 
-    H. NaN - when we try and subtract undefined which is not a number JS gives us NaN since we are trying to subtract from 3 a non-number value. 
+
+* A. '32' It simply appends 2 to the string '3' instead of adding them as numbers.
+* B. 1 Js treats 3 and 2 as numbers and hence return 1 for '3' - 2.
+* C. 3 is the output since it adds 0 to 3 which is read as 3 while null is read as 0. 
+* D. '3null' since both '3' and null are treated as strings and hence appended to each other. 
+* E. 4 this returns 4 since true is treated as a 1 and added to 3 to sum to 4. 
+* F. 0 this returns 0 since the value of false is 0 as a number and it is added to a null which also converts to 0. Hence 0+0 = 0. 
+* G. '3undefined' JS concatenates both '3' and undefined as as strings to give '3undefined' 
+* H. NaN - when we try and subtract undefined which is not a number JS gives us NaN since we are trying to subtract from 3 a non-number value. 
 
      QUESTION 14 
-    A. true - Js automatically converts '2' to a number and compares it to 1 and since 2 > 1 it returns true.
-    B. false - because '2' has a higher unicode value than '12' and Js uses unicode values to compare two strings and the NaN character has the highest value as compared to the 2 in '12'. 
-    C. true - this is because the == operator uses type coercion and brings both operands to numbers and since the number 2 is equal to 2, it returns true. 
-    D. false - the ` === ` operator does not use type coercion and is a strict equality checer and returns false because 2 and '2' are of different types. 
-    E. false - This returns false because ``==`` uses type coercion and treats true as 1 and hence converts it to 1 , which is not equal to 2. 
-    F. true - Boolean(non zero number) is true in boolean and hence Boolean(2) is the same as true in boolean and despite === being a strict equality operator Boolean(2) is true and is hence equal to true in boolean and returns true for the entire expression. 
+ 
+ *  A. true - Js automatically converts '2' to a number and compares it to 1 and since 2 > 1 it returns true.
+ *   B. false - because '2' has a higher unicode value than '12' and Js  uses unicode values to compare two strings and the NaN character has the highest value as compared to the 2 in '12'. 
+ *    C. true - this is because the == operator uses type coercion and brings both operands to numbers and since the number 2 is equal to 2, it returns true. 
+ * D. false - the ` === ` operator does not use type coercion and is a strict equality checer and returns false because 2 and '2' are of different types. 
+ * E. false - This returns false because ``==`` uses type coercion and treats true as 1 and hence converts it to 1 , which is not equal to 2. 
+ * F. true - Boolean(non zero number) is true in boolean and hence Boolean(2) is the same as true in boolean and despite === being a strict equality operator Boolean(2) is true and is hence equal to true in boolean and returns true for the entire expression. 
 
      QUESTION 15  
     The `` == `` operator performs type coercion on the operands and then compares them while `` === `` is a strict equality operator and will immediately return false if the operands are of different types. THerefore == is a far more forgiving operator which can be used to compare operands of different types. 
@@ -52,6 +54,3 @@ This is because i is a defined with let keyword and only has scope within the fo
     3
     2
     
-    
-
-
