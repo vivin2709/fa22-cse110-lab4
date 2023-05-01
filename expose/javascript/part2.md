@@ -43,15 +43,21 @@ This is because i is a defined with let keyword and only has scope within the fo
  * F. true - Boolean(non zero number) is true in boolean and hence Boolean(2) is the same as true in boolean and despite === being a strict equality operator Boolean(2) is true and is hence equal to true in boolean and returns true for the entire expression. 
 
      QUESTION 15  
+      
     The `` == `` operator performs type coercion on the operands and then compares them while `` === `` is a strict equality operator and will immediately return false if the operands are of different types. THerefore == is a far more forgiving operator which can be used to compare operands of different types. 
 
-     QUESTION 17
+     QUESTION 17  
+
     modifyArray([1, 2, 3], doSomething) edits the passed array and returns the following: ``[2,4,6]``. Essentially it calls doSomething on every element in [1,2,3] this is because of the modifyArray function which then edits 1,2,3 to 2,4,6 by multiplying each value in it with 2 and returns the new array. Essentially, modifyArray goes through each element and callback is the function which takes in each element and modifies it appropriately.
 
     QUESTION 19
     ``
-    1
-    4
-    3
-    2
+    1  
+
+    4  
+
+    3  
+
+    2  
+
     ``
