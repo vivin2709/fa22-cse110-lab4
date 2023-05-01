@@ -8,11 +8,9 @@
 6. Line 13: the following error: `` ReferenceError: discountedPrice is not defined `` This is because discountedPrice has scope only wihtin the function since it has been initialized with the let keyword.
 7. Line 14 will print ``150`` this is because finalPrice has block scope within the entire function and hence prints its latest value which is 300*0.5 = 150.
 8. This function will return `` [50, 100, 150] `` since all the variables have block scope and push to discounted which stores the various discounted values the functions still correctly returns discounted array.
-9. Line 11 does not print anything since the following error is being thrown: 
- `` finalPrice = Math.round(discountedPrice * 100) / 100;
-                   ^
-TypeError: Assignment to constant variable.``
-This is because finalPrice is a const and its value is being reassigned from 0 which is causing an error since a const value is immutable.
+9. Line 11 does not print anything since the following error is being thrown: `` ReferenceError: i is not defined ``
+This is because i is a defined with let keyword and only has scope within the for loop.
+
 10. Line 12 throws the same error  `` finalPrice = Math.round(discountedPrice * 100) / 100;
                    ^
 TypeError: Assignment to constant variable.`` Since the code is still reassigning finalPrice which is a const it throws an error before the console.log(length) line is even reached.
