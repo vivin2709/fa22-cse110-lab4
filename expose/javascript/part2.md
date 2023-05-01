@@ -12,9 +12,8 @@
 This is because i is a defined with let keyword and only has scope within the for loop.
 
 10. Line 12 prints `` 3 `` since the length is stored as a const and has scope within function and its value is never reassigned. 
-                   ^
-TypeError: Assignment to constant variable.`` Since the code is still reassigning finalPrice which is a const it throws an error before the console.log(length) line is even reached.
-11.  This function does not return anything and throws the following error: `` TypeError: Assignment to constant variable. `` This error comes from the same line as the earlier questions where we try and reassign value of finalPrice which is a const value. 
+                   
+11.  This function does returns the following array: `` [50, 100, 150] `` this is because discountedPrice is reiniitialized for every iteration of the for loop and correctly pushed to discounted. It never gets reassigned and hence the correct array is returned. 
 
     ## QUESTION 2 ##
     A. student.name
