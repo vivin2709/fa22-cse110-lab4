@@ -11,7 +11,7 @@
 9. Line 11 does not print anything since the following error is being thrown: `` ReferenceError: i is not defined ``
 This is because i is a defined with let keyword and only has scope within the for loop.
 
-10. Line 12 throws the same error  `` finalPrice = Math.round(discountedPrice * 100) / 100;
+10. Line 12 prints `` 3 `` since the length is stored as a const and has scope within function and its value is never reassigned. 
                    ^
 TypeError: Assignment to constant variable.`` Since the code is still reassigning finalPrice which is a const it throws an error before the console.log(length) line is even reached.
 11.  This function does not return anything and throws the following error: `` TypeError: Assignment to constant variable. `` This error comes from the same line as the earlier questions where we try and reassign value of finalPrice which is a const value. 
