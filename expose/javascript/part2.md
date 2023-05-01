@@ -5,7 +5,7 @@
 3. Line 14 will print ``150`` because final price is declared as a var outside the for loop. Therefore, its current value is 300 * 0.5 the computation carried out in the last iteration of the for loop.
 4. This functions returns an array: ``[50, 100, 150]``. This is the discounted price array of all prices in the input array it is simply originalPrice * 0.5 it is also rounded before pushing to the output array. 
 5. This throws the following error: `` console.log(i); ReferenceError: i is not defined `` This is because i has scope only wihtin the for loop since it has been initialized with the let keyword. let essentially has block scope and hence i does not exist outside the for loop.
-6. Line 13: the following error: `` ReferenceError: discountedPrice is not defined `` This is because i has scope only wihtin the for loop since it has been initialized with the let keyword. let essentially has block scope and hence i does not exist outside the for loop.
+6. Line 13: the following error: `` ReferenceError: discountedPrice is not defined `` This is because discountedPrice has scope only wihtin the function since it has been initialized with the let keyword.
 7. Line 14 will print ``150`` this is because finalPrice has block scope within the entire function and hence prints its latest value which is 300*0.5 = 150.
 8. This function will return `` [50, 100, 150] `` since all the variables have block scope and push to discounted which stores the various discounted values the functions still correctly returns discounted array.
 9. Line 11 does not print anything since the following error is being thrown: 
